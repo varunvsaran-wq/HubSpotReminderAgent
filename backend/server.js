@@ -6,7 +6,8 @@ const digestRouter = require('./routes/digest');
 
 const app = express();
 
-app.use(cors({ origin: 'http://localhost:5173' }));
+// Allow all origins — frontend and API share the same domain on Vercel
+app.use(cors());
 app.use(express.json());
 
 app.use('/api/contacts', contactsRouter);
@@ -19,8 +20,13 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
-  console.log(`\n  IFG Reminder Agent API running at http://localhost:${PORT}`);
-  console.log(`  Claude API: ${process.env.ANTHROPIC_API_KEY ? '✓ configured' : '✗ missing ANTHROPIC_API_KEY'}\n`);
-});
+// Listen only in local dev — Vercel runs this as a serverless function
+if (!process.env.VERCEL) {
+  const PORT = process.env.PORT || 3001;
+  app.listen(PORT, () => {
+    console.log(`\n  IFG Reminder Agent API running at http://localhost:${PORT}`);
+    console.log(`  Claude API: ${process.env.ANTHROPIC_API_KEY ? '✓ configured' : '✗ missing ANTHROPIC_API_KEY'}\n`);
+  });
+}
+
+module.exports = app;
