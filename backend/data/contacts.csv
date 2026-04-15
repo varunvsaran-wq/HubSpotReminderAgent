@@ -1,0 +1,29 @@
+id,contact_name,company,contact_type,industry,deal_stage,last_activity_date,last_activity_note,owner,email
+1,Rachel Stone,Stone Capital Group,Buyer,Roofing,Active,2026-04-15,"Signed engagement letter; kicking off formal process with management team",Sarah Mitchell,rachel.stone@stonecapitalgroup.com
+2,Cynthia Lee,Lee Environmental Solutions,Seller,Remediation,Active,2026-04-10,"Management presentation prep call; reviewed financial normalization adjustments",Sarah Mitchell,cynthia.lee@leeenvironmental.com
+3,Marcus Chen,Blue Ridge HVAC Services,Buyer,HVAC,Active,2026-04-14,"Introductory call to discuss acquisition criteria in Southeast market; strong interest",Sarah Mitchell,marcus.chen@blueridgehvac.com
+4,Patricia Owens,Owens Landscape Group,Seller,Landscape,Prospect,2026-04-12,"Sent NDA and initial deal info package; awaiting signed NDA return",James Kowalski,patricia.owens@owenslandscape.com
+5,Robert Harmon,Harmon Roofing Solutions,Seller,Roofing,Business Development,2026-04-09,"Left voicemail; no response yet — second outreach needed",Sarah Mitchell,r.harmon@harmonroofing.com
+6,Amanda Pierce,Pierce Capital Advisors,Referral Partner,HVAC,Active,2026-04-03,"Introduced to new HVAC rollup platform looking for add-on acquisitions in the Midwest",Tom Reeves,amanda.pierce@piercecapital.com
+7,Diana Flores,Summit PE Partners,Buyer,Industrial Services,Actionable,2026-04-08,"Reviewed LOI terms; buyer requested minor adjustments to working capital peg",Tom Reeves,d.flores@summitpe.com
+8,Kevin Lao,Lao Environmental Remediation,Seller,Remediation,Active,2026-04-07,"Follow-up call on financial document request; CPA is compiling 3 years of tax returns",James Kowalski,kevin.lao@laoremediation.com
+9,Sandra Torres,Torres Wastewater Solutions,Seller,Wastewater,Monitoring,2026-04-02,"Check-in call; owner not ready to sell for another 6 months — revisit October 2026",Sarah Mitchell,storres@torresww.com
+10,Michael Stern,Stern Capital Acquisitions,Buyer,HVAC,Prospect,2026-04-01,"Initial screening call completed; sent deal criteria intake form — no response yet",Tom Reeves,mstern@sterncapital.com
+11,Lauren Beck,Beck Property Services,Referral Partner,Landscape,Business Development,2026-03-31,"Introduced IFG to two potential landscape sellers in Texas; both are warm leads",James Kowalski,lauren.beck@beckproperty.com
+12,Gregory Walsh,Walsh Industrial Group,Buyer,Industrial Services,Active,2026-03-26,"Due diligence checklist sent; awaiting management responses on key items",Sarah Mitchell,g.walsh@walshig.com
+13,Monica Vasquez,Vasquez Wastewater Inc,Seller,Wastewater,Actionable,2026-03-25,"Reviewing purchase agreement draft with seller's attorney; minor redlines expected",James Kowalski,mvasquez@vasquezww.com
+14,Priya Nair,Nair Roofing Inc,Seller,Roofing,Actionable,2026-03-17,"Negotiating exclusivity period terms; seller wants 45 days, buyer wants 30",Tom Reeves,priya.nair@nairroofing.com
+15,James Holton,Holton Remediation Services,Seller,Remediation,Actionable,2026-03-20,"LOI signed and countersigned; entering 30-day exclusivity period for due diligence",Tom Reeves,j.holton@holtonremediation.com
+16,Frank Deluca,DeLuca HVAC Corp,Seller,HVAC,Active,2026-03-16,"Tax returns received; CPA review scheduled for next week to normalize add-backs",James Kowalski,frank.deluca@delucahvac.com
+17,Alicia Brennan,Brennan Environmental,Seller,Remediation,Business Development,2026-03-01,"First exploratory call completed; owner open to exploring options in 12-18 months",Sarah Mitchell,abrennan@brennanenv.com
+18,Nina Patel,Patel Industrial Holdings,Buyer,Industrial Services,Prospect,2026-03-05,"Phone screen scheduled but rescheduled twice; owner citing bandwidth — try again",Tom Reeves,nina.patel@patelih.com
+19,Lisa Huang,Pacific Rim Buyers Group,Buyer,Wastewater,Business Development,2026-03-10,"Sent deal flow newsletter and investment thesis summary; no response to follow-up",James Kowalski,lhuang@pacificrimbuyers.com
+20,Daniel Park,Park Wastewater Engineering,Seller,Wastewater,Prospect,2026-02-14,"Sent overview of IFG M&A process; sent one follow-up — no response in 6 weeks",Tom Reeves,d.park@parkwweng.com
+21,Steven Cho,Cho Industrial Enterprises,Seller,Industrial Services,Monitoring,2026-02-20,"Owner still evaluating timing; mentioned revisiting in Q2 2026 — follow up now",Sarah Mitchell,s.cho@choind.com
+22,Brian Foster,Foster Landscape LLC,Referral Partner,Landscape,Monitoring,2026-02-01,"Referred one deal that fell through; staying warm — check in on new pipeline",Sarah Mitchell,brian.foster@fosterlandscape.com
+23,Heather Quinn,Quinn Landscape Partners,Referral Partner,Landscape,Monitoring,2026-01-15,"Annual check-in call; still actively referring deals — 2 more in her pipeline",James Kowalski,h.quinn@quinnlandscape.com
+24,David Russo,Russo Roofing Partners,Referral Partner,Roofing,Business Development,2026-01-30,"Sent updated referral fee structure and case studies; no acknowledgment received",Tom Reeves,d.russo@russoroofing.com
+25,Andre Williams,Williams Roofing Systems,Seller,Roofing,Business Development,2025-12-16,"Met at industry conference; expressed interest in exit planning within 2-3 years",Sarah Mitchell,a.williams@williamsroofing.com
+26,Tina Marsh,Marsh Industrial Services,Seller,Industrial Services,Prospect,2025-10-18,"Sent initial outreach email via LinkedIn; no response — needs a fresh channel",Tom Reeves,tina.marsh@marshindustrial.com
+27,Carlos Mendez,Mendez HVAC Solutions,Seller,HVAC,Monitoring,,"No activity on record — contact imported from old CRM; needs initial outreach",James Kowalski,c.mendez@mendezhvac.com
+28,Gary Thompson,Thompson HVAC Group,Seller,HVAC,Business Development,,"No activity on record — added from trade show lead list; needs first contact",James Kowalski,g.thompson@thompsonhvac.com
