@@ -16,13 +16,11 @@ app.get('/api/health', (req, res) => {
   res.json({
     status: 'ok',
     claudeConfigured: !!process.env.ANTHROPIC_API_KEY,
-    smtpConfigured: !!(process.env.SMTP_HOST && process.env.SMTP_USER),
   });
 });
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`\n  IFG Reminder Agent API running at http://localhost:${PORT}`);
-  console.log(`  Claude API: ${process.env.ANTHROPIC_API_KEY ? '✓ configured' : '✗ missing ANTHROPIC_API_KEY'}`);
-  console.log(`  SMTP:       ${process.env.SMTP_HOST ? '✓ configured' : '✗ missing SMTP config'}\n`);
+  console.log(`  Claude API: ${process.env.ANTHROPIC_API_KEY ? '✓ configured' : '✗ missing ANTHROPIC_API_KEY'}\n`);
 });

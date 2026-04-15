@@ -1,19 +1,18 @@
 # IFG Follow-Up Reminder Agent
 
 > **Grow. Partner. Exit. On Your Terms.**
-> A daily digest tool for Iconic Founders Group that surfaces pipeline contacts needing follow-up, enriched with Claude AI next-action suggestions.
+> A daily digest dashboard for Iconic Founders Group that surfaces pipeline contacts needing follow-up, enriched with Claude AI next-action suggestions.
 
 ---
 
 ## Stack
 
-| Layer    | Technology                                 |
-|----------|--------------------------------------------|
-| Frontend | React 18 + Vite (no UI library — pure CSS) |
-| Backend  | Node.js + Express                          |
-| AI       | Anthropic Claude (`claude-sonnet-4-6`)     |
-| Email    | Nodemailer (SMTP — works with Gmail, Outlook, SendGrid) |
-| Data     | Mock CSV dataset (28 contacts with edge cases) |
+| Layer    | Technology                                      |
+|----------|-------------------------------------------------|
+| Frontend | React 18 + Vite (no UI library — pure CSS)      |
+| Backend  | Node.js + Express                               |
+| AI       | Anthropic Claude (`claude-haiku-4-5-20251001`)  |
+| Data     | Mock CSV dataset (28 contacts with edge cases)  |
 
 ---
 
@@ -33,23 +32,11 @@ npm run install:all  # installs backend + frontend dependencies
 cp backend/.env.example backend/.env
 ```
 
-Open `backend/.env` and fill in:
+Open `backend/.env` and add your Claude API key:
 
 ```env
-# Required for AI suggestions
 ANTHROPIC_API_KEY=sk-ant-...
-
-# Required for email delivery
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-SMTP_SECURE=false
-SMTP_USER=your@gmail.com
-SMTP_PASS=your_gmail_app_password   # Gmail → Settings → Security → App Passwords
-EMAIL_FROM=your@gmail.com
-EMAIL_FROM_NAME=Iconic Founders Group
 ```
-
-> **Gmail tip:** Use an [App Password](https://myaccount.google.com/apppasswords), not your regular password. 2FA must be enabled.
 
 ### 3. Run
 
@@ -71,7 +58,6 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 2. **Click "Generate AI Digest"** — the backend filters stale contacts and calls Claude to generate a personalized next action + draft message for each
 3. **Browse the digest** — filter by contact type (Seller / Buyer / Referral Partner), sort by staleness or deal stage
 4. **Expand draft messages** — each card has a collapsible "Draft Message" section with a copy button
-5. **Send email digest** — click "Send Email Digest", enter a recipient, and the branded HTML email is delivered
 
 ---
 
@@ -121,13 +107,12 @@ All 5 deal stages, all 3 contact types, and all 6 industries are represented.
 | `GET`  | `/api/contacts` | All 28 contacts |
 | `GET`  | `/api/contacts/stale?threshold=14` | Contacts not touched in ≥ N days |
 | `POST` | `/api/digest/generate` | Generate AI digest `{ threshold: 14 }` |
-| `POST` | `/api/digest/email` | Send email `{ to, threshold, contacts }` |
 
 ---
 
 ## What I'd Build Next (with full HubSpot access)
 
 1. **Live HubSpot sync** — replace the CSV with real-time data via the HubSpot Contacts and Engagements APIs, so the digest always reflects actual CRM state including emails, calls, and meetings logged.
-2. **Owner-scoped digests** — route each advisor's contacts to their own inbox automatically on a cron schedule (e.g., every weekday at 7am), so each team member only sees their own pipeline.
-3. **Feedback loop** — a "Mark as contacted" button in the email that fires a webhook back to HubSpot to log a note, closing the loop without requiring anyone to touch the CRM manually.
+2. **Owner-scoped digests** — route each advisor's contacts to their own view automatically, so each team member only sees their own pipeline.
+3. **Feedback loop** — a "Mark as contacted" button that fires a webhook back to HubSpot to log a note, closing the loop without requiring anyone to touch the CRM manually.
 4. **Smart prioritization** — weight urgency by deal stage (Actionable contacts with 7+ days of silence rank above Monitoring contacts with 30+ days) so the digest leads with what matters most.
